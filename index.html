@@ -4,24 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js"></script> 
+    
 </head>
 <body>
 
-    <section class="first-section">
+    <section class="first-section" id="main">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="container first-section__navigation">
             <header class="first-section__logo">
                 <img src="/img/logo.png" alt="logo">
             </header>
             <nav class="first-section__menu nav-menu">
                 <ul class="nav-menu__list">
-                    <li class="nav-menu__item">Главная</li>
-                    <li class="nav-menu__item">Проекты</li>
-                    <li class="nav-menu__item">О себе</li>
-                    <li class="nav-menu__item">Навыки</li>
+                    <a href="#main"><li class="nav-menu__item">Главная</li></a>
+                    <a href="#projects"><li class="nav-menu__item">Проекты</li></a>
+                    <a href="#about"><li class="nav-menu__item">О себе</li></a>
+                    <a href="#skills"><li class="nav-menu__item">Навыки</li></a>
                 </ul>
             </nav>
         </div>
@@ -43,7 +50,7 @@
     </section>
     
     
-    <section class="second-section">
+    <section class="second-section" id="projects">
         
         <div class="container section__title">
             <img src="/img/section.png" alt="">
@@ -54,27 +61,32 @@
         
         
         <div class="container second-section__cards">
-            <div class="project-cards">
-                <img class="project-cards__img" src="/img/house.png" alt="Домик">
-                <p><span class="project-cards__title"> Домашний интерьер </span></p>
+            <a href="/ResponsiveImageGallery/galleryInterior.html">
+                <div class="project-cards">
+                    <img class="project-cards__img" src="/img/house.png" alt="Домик">
+                    <p><span class="project-cards__title"> Домашний интерьер </span></p>
                     <p>Разрабатываю уникальные комнатные интерьеры, воплощаю ваши самые смелые идеи!</p>
     
                     <p>от 350 до 500 рублей за квадратный метр.</p>
     
-            </div>
-            <div class="project-cards">
-                <img class="project-cards__img" src="/img/furniture.png" alt="Мебель">
-                <p> <span class="project-cards__title">Моделирование мебели </span></p>
+                </div>
+            </a>
+            <a href="/ResponsiveImageGallery/galleryFurniture.html">
+                <div class="project-cards">
+                    <img class="project-cards__img" src="/img/furniture.png" alt="Мебель">
+                    <p> <span class="project-cards__title">Моделирование мебели </span></p>
                     <p>Создаю концептуальную мебель, которая украсит и добавит изысканности вашему интерьеру</p>
     
                     <p>от 350 рублей</p>
-            </div>
-            <div class="project-cards">
-                <img class="project-cards__img" src="/img/Sword.png" alt="Мебель">
-                <p> <span class="project-cards__title">Fantasy сцены </span></p>
+                </div>
+            </a>
+            <a href="/ResponsiveImageGallery/galleryFantasy.html">
+                <div class="project-cards">
+                    <img class="project-cards__img" src="/img/Sword.png" alt="Мебель">
+                    <p> <span class="project-cards__title">Fantasy сцены </span></p>
                     <p>Развиваюсь в разных направлениях, поэтому воссоздаю и придумываю новые фантастические сцены, а также игровые моменты</p>
-            </div>
-            
+                </div>
+            </a>
         </div>
 
         <div class="triangle"></div>
@@ -83,7 +95,7 @@
         
     </section>
 
-    <section class="third-section">
+    <section class="third-section" id="about">
         
         <div class="container section__title">
             <img src="/img/section.png" alt="">
@@ -91,18 +103,18 @@
             <div class="under-title third_under-title"></div>
         </div>
         <div class="container third-section__content">
-            <div class="left-side">
+            <div class="third-section__left-side">
                 <img src="/img/self_about.png" alt="Фото">
                 <div class="ellipse"></div>
             </div>
-            <div class="right-side third">
+            <div class="third-section__right-side third">
                 <p>С другой стороны, курс на социально-ориентированный национальный проект однозначно определяет каждого участника как способного принимать 
                     собственные решения касаемо как самодостаточных, так и внешне зависимых концептуальных решений.</p>
                 
-                <div class="third__bottom-text">
+                <div class="third__bottom-text bottom-text">
                     <p class="left-side-text">С другой стороны, курс на социально-ориентированный национальный проект однозначно определяет каждого участника как способного принимать 
                         собственные решения касаемо как самодостаточных, так и внешне зависимых концептуальных решений.</p>
-                    <div class="right-side__contacts">
+                    <div class="third__contacts">
                         <img class="contacts__img" src="/img/Mail.png" alt="@">
                         <p>dimka97-10@mail.ru</p>
                         <img class="contacts__img" src="/img/telegram.png" alt="телеграм">
@@ -116,7 +128,7 @@
         </div>
     </section>
 
-    <section class="fourth-section">
+    <section class="fourth-section" id="skills">
         <div class="container section__title">
             <img src="/img/section.png" alt="">
             <h1>Навыки</h1>
@@ -138,6 +150,7 @@
                     <div class="bar-section white"></div>
                 </div>
             </div>
+            
             <div class="skill Kompas">
                 <div class="skill__icon">
                     <img src="/img/Kompas.png" alt="Компас3D">
@@ -195,6 +208,7 @@
                     <div class="bar-section"></div>
                 </div>
             </div>
+            
             <div class="skill Substance">
                 <div class="skill__icon">
                     <img src="/img/Substance.png" alt="SubstancePainter">
@@ -224,6 +238,7 @@
                     <div class="bar-section"></div>
                 </div>
             </div>
+            
             <div class="skill ZBrush">
                 <div class="skill__icon">
                     <img src="/img/ZBrush.png" alt="ZBrush">
@@ -257,6 +272,8 @@
         </div>
     </footer>
     
+    
+
 </body>
 
 </html>
