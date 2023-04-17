@@ -1,12 +1,12 @@
 @import "normalize.css";
 @import "reset.css";
-/*  * {
-    color: hsla(210, 100%, 100%, 0.9) !important;
-    background: hsla(210, 100%, 50%, 0.5) !important;
-    outline: solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
-    box-shadow: none !important;
-    filter: none !important;
-}  */
+/** {
+  color: hsla(210, 100%, 100%, 0.9) !important;
+  background: hsla(210, 100%, 50%, 0.5) !important;
+  outline: solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
+  box-shadow: none !important;
+  filter: none !important;
+}*/
 @font-face {
   font-family: "GentiumBookPlus";
   font-style: normal;
@@ -115,6 +115,19 @@ a {
   font-size: 48px;
   font-family: "GentiumBookPlus";
   color: #ffffff;
+}
+
+.element-animation {
+  margin: 0rem 0;
+  transform: translateY(40%);
+  opacity: 0;
+  z-index: 2;
+}
+
+.element-show {
+  opacity: 1;
+  transition: opacity 1s;
+  transform: translateY(0%);
 }
 
 .right-side {
@@ -400,10 +413,10 @@ a {
 .footer__right-side {
   margin: 20px 10px;
 }
-.footer__right-side img {
+.footer__right-side a {
   margin-right: 15px;
 }
-.footer__right-side img:last-child {
+.footer__right-side a:last-child {
   margin-right: 0;
 }
 
