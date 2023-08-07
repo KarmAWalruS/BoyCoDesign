@@ -6,13 +6,14 @@
   outline: solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
   box-shadow: none !important;
   filter: none !important;
-}*/
+}
 @font-face {
   font-family: "GentiumBookPlus";
   font-style: normal;
   font-weight: bold;
-  src: local("GentiumBookPlus"), url(/fonts/GentiumBookPlus-Bold.ttf) format(ttf);
-}
+  src: local("GentiumBookPlus"),
+    url(/fonts/GentiumBookPlus-Bold.ttf) format(ttf);
+}*/
 @font-face {
   font-family: "GentiumBookPlus";
   font-style: normal;
@@ -610,6 +611,7 @@ a {
   }
   .left-side {
     top: 330px;
+    z-index: 3;
   }
   .left-side__text-block {
     display: flex;
@@ -646,7 +648,7 @@ a {
   }
   .third-section .third {
     max-width: 380px;
-    max-height: 620px;
+    max-height: 700px;
   }
   .third-section .third__bottom-text {
     flex-direction: column;
