@@ -19,9 +19,9 @@ $(window).on("load resize", function () {
 
 $(window).on("load resize", function () {
   if ($(window).width() <= 1199) {
-    $("#my_img").attr("src", "/img/self1199px.png");
+    $("#my_img").attr("src", "./img/self1199px.png");
   } else {
-    $("#my_img").attr("src", "/img/self.png");
+    $("#my_img").attr("src", "./img/self.png");
   }
 });
 
