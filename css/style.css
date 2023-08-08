@@ -778,6 +778,7 @@ a {
     overflow: hidden;
   }
   .nav-menu__item:last-child {
+    font-size: 15px;
     margin-right: 30px;
   }
   .ellipse__first-section {
