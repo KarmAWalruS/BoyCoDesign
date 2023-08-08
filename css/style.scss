@@ -1,5 +1,5 @@
-@import "normalize.css";
-@import "reset.css";
+@import "./normalize.css";
+@import "./reset.css";
 
 /** {
   color: hsla(210, 100%, 100%, 0.9) !important;
@@ -7,35 +7,38 @@
   outline: solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
   box-shadow: none !important;
   filter: none !important;
-}
+}*/
+/** {
+  outline: 1px solid red !important;
+}*/
 @font-face {
   font-family: "GentiumBookPlus";
   font-style: normal;
   font-weight: bold;
   src: local("GentiumBookPlus"),
     url(/fonts/GentiumBookPlus-Bold.ttf) format(ttf);
-}*/
+}
 
 @font-face {
   font-family: "GentiumBookPlus";
   font-style: normal;
   font-weight: normal;
   src: local("GentiumBookPlus"),
-    url(/fonts/GentiumBookPlus-Regular.ttf) format(ttf);
+    url(./fonts/GentiumBookPlus-Regular.ttf) format(ttf);
 }
 
 @font-face {
   font-family: "MPLUS1p";
   font-style: normal;
   font-weight: normal;
-  src: local("MPLUS1p"), url(/fonts/MPLUS1p-Regular.ttf) format(ttf);
+  src: local("MPLUS1p"), url(./fonts/MPLUS1p-Regular.ttf) format(ttf);
 }
 
 @font-face {
   font-family: "MPLUS1p";
   font-style: normal;
   font-weight: bold;
-  src: local("MPLUS1p"), url(/fonts/MPLUS1p-Bold.ttf) format(ttf);
+  src: local("MPLUS1p"), url(./fonts/MPLUS1p-Bold.ttf) format(ttf);
 }
 
 a {
@@ -288,6 +291,26 @@ a {
     .project-cards:hover {
       transform: scale(1.2);
       transition: ease-in-out 0.4s;
+    }
+  }
+
+  .artstation {
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-family: "MPLUS1p";
+    font-weight: bold;
+    font-size: 32px;
+    color: #ffffff;
+
+    a {
+      text-decoration: none;
+      color: #f50000c7;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   }
 }
@@ -740,6 +763,12 @@ a {
         margin-bottom: 10px;
       }
     }
+
+    .artstation {
+      font-size: 22px;
+      color: #ffffff;
+      padding-bottom: 20px;
+    }
   }
 
   .third-section {
@@ -853,6 +882,12 @@ a {
     }
   }
 
+  .second-section {
+    .artstation {
+      font-size: 19px;
+    }
+  }
+
   .ellipse {
     width: 710px;
     height: 310px;
@@ -880,29 +915,45 @@ a {
   }
 }
 
-/* @media (max-width: 768px) {
-  .right-side {
-    img {
-      right: 50px;
-    }
-  }
-
-  .hamburger {
-    right: 10px;
+@media (max-width: 540px) {
+  .first-section {
+    overflow: hidden;
   }
 
   .nav-menu {
-    &__list {
-      justify-content: flex-end;
-    }
-
-    &__item {
-      font-size: 20px;
+    &__item:last-child {
       margin-right: 30px;
     }
   }
 
-  .nav-menu_active {
-    right: 10px;
+  .ellipse {
+    &__first-section {
+      right: -60px;
+    }
   }
-} */
+
+  .second-section {
+    overflow: hidden;
+
+    .artstation {
+      font-size: 15px;
+    }
+  }
+
+  .third-section {
+    overflow: hidden;
+  }
+
+  .fourth-section {
+    overflow: hidden;
+    .fourth-section__content {
+      justify-content: flex-start;
+      .skill {
+        &__icon {
+          align-items: baseline;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
