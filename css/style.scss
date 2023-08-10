@@ -896,6 +896,7 @@ a {
 
   .third {
     position: absolute;
+    right: 0;
   }
 
   .left-side {
@@ -919,6 +920,11 @@ a {
 @media (max-width: 540px) {
   .first-section {
     overflow: hidden;
+    .right-side {
+      img {
+        right: 100px;
+      }
+    }
   }
 
   .nav-menu {
@@ -956,6 +962,13 @@ a {
           flex-direction: column;
         }
       }
+    }
+  }
+
+  .footer {
+    .footer__right-side {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }

@@ -762,6 +762,7 @@ a {
   }
   .third {
     position: absolute;
+    right: 0;
   }
   .left-side__text-block {
     width: 420px;
@@ -777,6 +778,9 @@ a {
 @media (max-width: 540px) {
   .first-section {
     overflow: hidden;
+  }
+  .first-section .right-side img {
+    right: 100px;
   }
   .nav-menu__item:last-child {
     font-size: 15px;
@@ -803,5 +807,9 @@ a {
   .fourth-section .fourth-section__content .skill__icon {
     align-items: baseline;
     flex-direction: column;
+  }
+  .footer .footer__right-side {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }/*# sourceMappingURL=style.css.map */
