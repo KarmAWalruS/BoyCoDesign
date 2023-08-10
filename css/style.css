@@ -274,12 +274,21 @@ a {
   font-size: 32px;
   color: #ffffff;
 }
-.second-section .artstation a {
-  text-decoration: none;
-  color: rgba(245, 0, 0, 0.7803921569);
+.second-section .link-button {
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  font-family: "MPLUS1p";
+  font-weight: bold;
+  font-size: 32px;
 }
-.second-section .artstation a:hover {
-  text-decoration: underline;
+.second-section .link-button input {
+  border-radius: 10px;
+  border: none;
+  background: #ff0000;
+  color: #ffffff;
 }
 
 .third-section {
@@ -446,7 +455,7 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.637);
+  background: rgba(0, 0, 0, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -754,7 +763,8 @@ a {
     right: 50px;
   }
   .second-section .artstation {
-    font-size: 19px;
+    text-align: center;
+    font-size: 20px;
   }
   .ellipse {
     width: 710px;
@@ -793,7 +803,8 @@ a {
     overflow: hidden;
   }
   .second-section .artstation {
-    font-size: 15px;
+    text-align: center;
+    font-size: 20px;
   }
   .third-section {
     overflow: hidden;

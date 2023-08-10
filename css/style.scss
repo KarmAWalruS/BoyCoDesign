@@ -303,14 +303,23 @@ a {
     font-weight: bold;
     font-size: 32px;
     color: #ffffff;
+  }
 
-    a {
-      text-decoration: none;
-      color: #f50000c7;
-    }
+  .link-button {
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-family: "MPLUS1p";
+    font-weight: bold;
+    font-size: 32px;
 
-    a:hover {
-      text-decoration: underline;
+    input {
+      border-radius: 10px;
+      border: none;
+      background: #ff0000;
+      color: #ffffff;
     }
   }
 }
@@ -500,7 +509,7 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.637);
+  background: rgba(0, 0, 0, 90%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -885,7 +894,8 @@ a {
 
   .second-section {
     .artstation {
-      font-size: 19px;
+      text-align: center;
+      font-size: 20px;
     }
   }
 
@@ -944,7 +954,8 @@ a {
     overflow: hidden;
 
     .artstation {
-      font-size: 15px;
+      text-align: center;
+      font-size: 20px;
     }
   }
 
