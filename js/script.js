@@ -35,6 +35,10 @@ $(window).on("load resize", function () {
     $('<div class="break"></div>').insertAfter(".Photoshop");
     $('<div class="break"></div>').insertAfter(".Substance");
     $('<div class="break"></div>').insertAfter(".3ds");
+    $('<div class="break"></div>').insertAfter(".ZBrush");
+    $('<div class="break"></div>').insertAfter(".Unreal");
+    $('<div class="break"></div>').insertAfter(".marmoset");
+    $('<div class="break"></div>').insertAfter(".RizomUV");
   }
 });
 
