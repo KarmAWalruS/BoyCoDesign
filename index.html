@@ -26,10 +26,10 @@
             </header>
             <nav class="first-section__menu nav-menu">
                 <ul class="nav-menu__list">
-                    <a href="#main"><li class="nav-menu__item">Главная</li></a>
                     <a href="#projects"><li class="nav-menu__item">Проекты</li></a>
                     <a href="#about"><li class="nav-menu__item">О себе</li></a>
                     <a href="#skills"><li class="nav-menu__item">Навыки</li></a>
+                    <a href="#footer"><li class="nav-menu__item">Контакты</li></a>
                 </ul>
             </nav>
         </div>
@@ -110,7 +110,7 @@
         
         <div class="container section__title">
             <img src="./img/section.png" alt="">
-            <h1>Обо мне</h1>
+            <h1>О себе</h1>
             <div class="under-title third_under-title"></div>
         </div>
         <div class="container third-section__content">
@@ -128,10 +128,10 @@
                     <div class="third__contacts">
                         <img class="contacts__img" src="./img/Mail.png" alt="@">
                         <p>dimka97-10@mail.ru</p>
-                        <img class="contacts__img" src="./img/telegram.png" alt="телеграм">
-                        <p>@nelian97</p>
-                        <img class="contacts__img" src="./img/vk.png" alt="VK">
-                        <p>vk.com/del97</p>
+                        <a href="https://t.me/nelian97"><img class="contacts__img" src="./img/telegram.png" alt="телеграм">
+                        <p>@nelian97</p></a>
+                        <a href="https://vk.com/del97"><img class="contacts__img" src="./img/vk.png" alt="VK">
+                        <p>vk.com/del97</p></a>
                     </div>
                 </div>
                     
@@ -267,23 +267,70 @@
                 </div>
             </div>
 
+            <div class="skill Unreal element-animation">
+                <div class="skill__icon">
+                    <img src="./img/Unreal.png" alt="Unreal Engine 5">
+                    <p>Unreal Engine 5</p>
+                </div>
+                
+                <div class="bar">
+                    <div class="bar-section"></div>
+                    <div class="bar-section"></div>
+                    <div class="bar-section"></div>
+                    <div class="bar-section"></div>
+                    <div class="bar-section"></div>
+                </div>
+            </div>
+
+            <div class="break"></div>
+
+            <div class="skill marmoset element-animation">
+                <div class="skill__icon">
+                    <img src="./img/marmoset.png" alt="Marmoset">
+                    <p>Marmoset</p>
+                </div>
+                
+                <div class="bar">
+                    <div class="bar-section"></div>
+                    <div class="bar-section"></div>
+                    <div class="bar-section"></div>
+                    <div class="bar-section"></div>
+                    <div class="bar-section"></div>
+                </div>
+            </div>
+
+            <div class="skill RizomUV element-animation">
+                <div class="skill__icon">
+                    <img src="./img/RizomUV.png" alt="Rizom UV">
+                    <p>Rizom UV</p>
+                </div>
+                
+                <div class="bar">
+                    <div class="bar-section"></div>
+                    <div class="bar-section"></div>
+                    <div class="bar-section"></div>
+                    <div class="bar-section"></div>
+                    <div class="bar-section"></div>
+                </div>
+            </div>
+
+           
            
         </div>
         <div class="triangle__fourth-section-right"></div>
     </section>
 
-    
 
                                         <!-- Footer -->
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container footer-container">
             <div class="footer__left-side">
                 <p>©2023 Design / Все права защищены</p>
             </div>
             <div class="footer__right-side ">
-                <a href="mailto:engrdm@mail.ru">
-                    <img  src="./img/Mail.png" alt="@">
+                <a href="https://wa.me/qr/7QZFHH4ID4UAH1">
+                    <img  src="./img/Whatsapp.png" alt="@">
                 </a>
                 <a href="https://t.me/nelian97">
                     <img  src="./img/telegram.png" alt="telegram"> 
@@ -301,11 +348,11 @@
 
                                     <!-- Gallery Interior -->
 
-    <div class="overlay overlay__hidden" id="gallery_Interior" >
+    <div class="overlay overlay__hidden" id="gallery_Interior">
         <div class="cross" >
             <span class="cross-sign" onclick="togglePopupInterior()">&#x2715</span>
         </div>
-        <div id="carousel_1" class="carousel slide">
+        <div id="carousel_1" class="carousel slide" >
             <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -323,7 +370,7 @@
             
 
             </div>
-            <div class="carousel-inner ">
+            <div class="carousel-inner " >
             <div class="carousel-item active ">
                 <img src="./img/Gallery/interior1.jpg" class="d-block w-75 mx-auto my-5 " alt="...">
             </div>
